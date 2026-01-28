@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>DOM Playground</title>
+
+    <link rel="stylesheet" href="b.css">
+
+  </head>
+  <body>
+    <h1>🌳 DOM Playground</h1>
+    <p>Play with different DOM concepts below 👇</p>
+
+    <!-- 1. Selecting Elements -->
+    <section>
+      <h2>1. Selecting Elements</h2>
+      <p id="byId">Select me by ID</p>
+      <p class="byClass">Select me by Class</p>
+      <p>Select me by Tag</p>
+      <button onclick="selectElements()">Run</button>
+    </section>
+
+    <!-- 2. Changing Content -->
+    <section>
+      <h2>2. Changing Content</h2>
+      <h3 id="changeText">Old Text</h3>
+      <button onclick="changeContent()">Change Text</button>
+    </section>
+
+    <!-- 3. Changing Styles -->
+    <section>
+      <h2>3. Changing Styles</h2>
+      <p id="styleMe">Make me colorful</p>
+      <button onclick="changeStyle()">Change Style</button>
+    </section>
+
+    <!-- 4. Events -->
+    <section>
+      <h2>4. Events</h2>
+      <button id="eventBtn">Click Me</button>
+      <p id="eventMsg"></p>
+    </section>
+
+    <!-- 5. Creating & Adding Elements -->
+    <section>
+      <h2>5. Creating & Adding Elements</h2>
+      <div id="container"></div>
+      <button onclick="addElement()">Add Paragraph</button>
+    </section>
+
+    <!-- 6. Removing Elements -->
+    <section>
+      <h2>6. Removing Elements</h2>
+      <p id="removeMe">I will be removed</p>
+      <button onclick="removeElement()">Remove Me</button>
+    </section>
+
+    <!-- 7. Changing Attributes -->
+    <section>
+      <h2>7. Changing Attributes</h2>
+      <img id="myImage" src="https://via.placeholder.com/100" width="100" />
+      <br />
+      <button onclick="changeAttribute()">Change Image</button>
+    </section>
+
+    <!-- 8. DOM Tree Navigation --> 
+    <section>
+      <h2>8. DOM Tree Navigation</h2>
+      <div id="parent">
+        <p id="child1">Child 1</p>
+        <p id="child2">Child 2</p>
+      </div>
+      <button onclick="navigateDOM()">Show Parent & Sibling</button>
+    </section>
+
+    <!-- 9. Forms & Input -->
+    <section>
+      <h2>9. Forms & Input</h2>
+      <input type="text" id="name" placeholder="Enter your name" />
+      <button onclick="showInput()">Submit</button>
+      <p id="msg"></p>
+    </section>
+
+   <script src="./c.js"></script>
+  </body>
+</html>
